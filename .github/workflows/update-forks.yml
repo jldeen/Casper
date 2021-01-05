@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-    - cron:  "*/5 * * * *" # every 30 minutes
+    - cron:  '*/30 * * * *' # every 30 minutes
 
 jobs:
   sync:
@@ -19,9 +19,4 @@ jobs:
           owner: TryGhost
           base: master
           head: master
-
-#           git fetch upstream
-# git merge upstream/master master
-# git rebase upstream/master
-
-# final action leave comment / send comment to slack
+          
