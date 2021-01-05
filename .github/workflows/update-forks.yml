@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v1.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.WORKFLOWS_TOKEN }}
           owner: TryGhost
           base: master
           head: master
