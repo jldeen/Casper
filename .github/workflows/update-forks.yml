@@ -4,8 +4,6 @@ on:
   schedule:
     - cron:  '*/15 * * * *' # every 30 minutes
 
-  workflow_dispatch: # on button click
-
 jobs:
   sync:
 
